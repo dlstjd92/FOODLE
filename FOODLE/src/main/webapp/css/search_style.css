@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'LINESeedKR-Bd';
+}
+button{border:none; border-radius:none;}
+/* body{
+    background: #f5f6fa;
+} */
+
+.wrapper .sidebar{
+    /* background: rgb(144 201 87);  */
+    background: rgb(120 148 92);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile h1{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+/* 추가 했음!*/
+.wrapper .sidebar .profile .p_1{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+  }
+  
+  input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid rgb(51, 97, 1);
+    color: rgb(241, 237, 237);
+    font-size: 18px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: rgb(55, 105, 1);
+
+    background:white;
+    border-right: 2px solid rgb(144 201 87);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: rgb(55, 105, 1);
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+/*  */
+
+#fullscreen{
+	width: 100%;
+	height: 1079px;
+	/* background-color: rgb(235, 234, 234); */
+   background-color: rgb(220, 230, 216);
+}
+/* #screen0{
+	width: 300px;
+	height: 969px;
+	background-color: black;
+	float: left;
+} */
+/* #screen{
+    margin-top: 0px;
+    position: fixed;
+    top: 80px;
+    right: 180px;
+	width: 1200px;
+	height: 80px;
+	background-color: black;
+	float: left;
+} */
+/* display: table; */
+#screen{
+    /* outline: 5px;
+    outline-style: double;
+    outline-color: black; */
+    /* border: 1px solid #bbb; */
+    border-radius: 8px;
+    position: fixed;
+    top: 280px;
+    right: 230px;
+	width: 300px;
+	background-color: white;
+}
+.search1 {
+    position: fixed;
+    width: 300px;
+    right: 320px;
+  }
+  input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  .btn2{
+    position: fixed;
+    width: 70px;
+    height: 30px;
+    font-size: 1.5ch;
+    top: 285px;
+    right: 230px;
+    background-color: rgb(12, 117, 209);
+    color: white;
+    font-family: 'LotteMartDream';
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    line-height: 0px;
+  }
+  button.btn3{
+    position: fixed;
+    width: 70px;
+    height: 30px;
+    font-size: 1.5ch;
+    top: 285px;
+    right: 150px;
+    /* background-color: rgb(12, 117, 209); */
+    color: black;
+    font-family: 'LotteMartDream';
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+/* #screen1{
+    margin-top: 250px;
+	width: 770px;
+	height: 600px;
+	background-color: black;
+	float: left;
+} */
+#screen1{
+    /* outline: 5px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 280px;
+    right: 780px;
+	width: 750px;
+	height: 600px;
+	background-color: white;
+}
+/* #screen1-2{
+	width: 770px;
+	height: 370px;
+	background-color: yellow;
+} */
+/* #screen1-3{
+	width: 770px;
+	height: 200px;
+	background-color: rgb(255, 0, 149);
+} */
+/* #screen2{
+    margin-top: 250px;
+    width: 770px;
+    height: 600px;
+	background-color: black;
+	float: left;
+    position: absolute;
+    top: 0; right: 0;
+} */
+/* 2-1,2 위 여백 10 */
+#screen2{
+    /* outline: 5px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 380px;
+    right: 40px;
+	width: 690px;
+	height: 500px;
+    /* color: rgb(73, 72, 72); */
+    color: rgb(0, 0, 0);
+	/* background-color: white; */
+}
+/* #screen2-2{
+	width: 770px;
+	height: 189.5px;
+	background-color: green;
+} */
+/* 2-3 위 여백 10 */
+/* #screen2-3{
+	width: 770px;
+	height: 370px;
+	background-color: rgb(177, 16, 209);
+} */
+/* 2-4 위 아래 여백 10씩 */
+/* #screen2-4{
+	width: 770px;
+	height: 200px;
+	background-color: rgb(226, 169, 12);
+} */
+  table, th, td{border:1px solid black}
+  table{ border-collapse : collapse; background: none;} /*이중선 제거*/
+  th,td{
+    width: 200px;
+    height: 83px;
+    text-align: center;
+    /* border: 1px solid #000; */
+    font-weight: 900;
+    /* border: 2px solid rgb(73, 72, 72); */
+    border: 2px solid rgb(0, 0, 0);
+
+    vertical-align: top;   /* 위 */
+    vertical-align: bottom;   /* 아래 */
+    vertical-align: middle;   /* 가운데 */
+ }
+   .name{
+    /* background-color: rgb(219, 218, 218); */
+    font-size: 20px;
+    background: none;
+  }

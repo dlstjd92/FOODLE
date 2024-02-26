@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.wrap{width: 100%; height: 100vh; overflow: hidden; position: relative;}
+.wrap>img{width: 100%; height: 100vh; }
+input{border-radius:none; border:none; }
+button{border:none; border-radius:none;}
+#box{position: absolute; top:50%; left:50%;
+    margin-left: -230px; margin-top: -197.5px; max-height: 600px; box-sizing: border-box;}
+
+
+#box1{display: flex; justify-content: center; width: 350px; height: 200px;}
+.boxWrap{width: 100%; margin: 0 auto;}
+
+.login_input{width: 100%; height: 40px; border-radius: 5px; margin-top: 5px; box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);}
+
+#box4{margin-top: 10px;}
+.main_btn{width: 49%; height: 35px; border-radius: 5px; cursor: pointer;}
+
+.main_btn:hover {
+    background: rgba(96,96,0,0.5);
+    color: white;
+    transition: all 0.5s;
+}
+
+.box_bg{background: rgba(255, 255, 255, .8); padding: 60px; border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);}
+
+
+/* select */
+.nut_box{width: 100%;}
+
+
+
+/* 공통 css */
+.pl10{padding-left: 10px;}
+
+
+/* 공통 css */
+.pl10{padding-left: 10px;}

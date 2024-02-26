@@ -1,0 +1,305 @@
+
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*  font-family: 'Open Sans', sans-serif; */
+    font-family: 'LINESeedKR-Bd';
+}
+
+/* body{
+    background: #f5f6fa;
+<<<<<<< HEAD
+     height: 969px; 
+=======
+    height: 100%;
+>>>>>>> branch 'master1' of https://github.com/2022-SMHRD-IS-AI2/FOODLE.git
+} */
+
+.wrapper .sidebar{
+   /* background: rgb(144 201 87); */ 
+    background: rgb(120 148 92);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile h1{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+/* 추가 했음!*/
+.wrapper .sidebar .profile .p_1{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+  }
+  
+  input {
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid rgb(51, 97, 1);
+    color: rgb(241, 237, 237);
+    font-size: 18px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: rgb(55, 105, 1);
+
+    background:white;
+    border-right: 2px solid rgb(144 201 87);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: rgb(55, 105, 1);
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+/*  */
+
+#fullscreen{
+   width: 100%;
+
+
+   height: 1079px;
+
+   /* background-color: rgb(227, 247, 213); */
+   background-color: rgb(220, 230, 216);
+}
+#screen0{
+   width: 300px;
+   height: 969px;
+   background-color: black;
+   float: left;
+}
+/* #screen1{
+   width: 200px;
+   height: 600px;
+   background-color: black;
+   float: left;
+} */
+/* 일일 영양분 */
+#screen1-1{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 70px;
+    right: 800px;
+   width: 750px;
+   height: 380px;
+   background-color: white;
+   padding : 20px;
+   border-radius : 10px;
+}
+/* 추천 식단 */
+#screen1-2_0{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 470px;
+    right: 800px;
+   width: 750px;
+   height: 350px;
+   background-color: white;
+   padding: 15px;
+   border-radius : 10px;
+}
+
+#screen1-2{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 510px;
+    right: 800px;
+   width: 750px;
+   height: 300px;
+   background-color: white;
+   border-radius : 10px;
+}
+
+button.btn4{
+    width: 180px;
+    border-radius : 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*  주간(당/나트륨..) */
+#screen1-3{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 840px;
+    right: 800px;
+   width: 750px;
+   height: 180px;
+   background-color: white;
+   padding : 20px;
+   border-radius : 10px;
+}
+
+
+/* #screen2{
+    width: 770px;
+    height: 948px;
+   background-color: black;
+   float: left;
+    position: absolute;
+    top: 0; right: 0;
+} */
+/* 칼로리(주간) */
+/* 2-1,2 위 여백 10 */
+#screen2-1{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 70px;
+    right: 22px;
+   width: 750px;
+   height: 180px;
+   background-color: white;
+   padding : 20px;
+   border-radius : 10px;
+}
+/* 몸무게(주간) */
+#screen2-2{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 270px;
+    right: 22px;
+   width: 750px;
+   height: 180px;
+   background-color: white;
+   padding : 20px;
+   border-radius : 10px;
+}
+/* 검색 식품 영양분 */
+/* 2-3 위 여백 10 */
+#screen2-3{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 470px;
+    right: 22px;
+   width: 750px;
+   height: 350px;
+   background-color: white;
+   padding : 20px;
+   border-radius : 10px;
+}
+/* 건강 뉴스 */
+/* 2-4 위 아래 여백 10씩 */
+#screen2-4{
+    /* outline: 3px;
+    outline-style: double;
+    outline-color: black; */
+    position: fixed;
+    top: 840px;
+    right: 22px;
+   width: 750px;
+   height: 180px;
+   background-color: white;
+   padding : 20px;
+   border-radius : 10px;
+}
+.news_tit{
+   font-size: 25px;
+}
+.dsc_wrap{
+   font-size: 15px;
+   position: fixed;
+   width: 500px;
+   height: 20px;
+   margin-left: 220px; 
+}
+/* .api_txt_lines dsc_txt_wrap{
+   font-size: 15px;
+    position: fixed;
+   width: 150px;
+   height: 20px; 
+   margin-right: 20px;
+} */ 
+/* .thumb api_get{
+   position: fixed;
+   width: 132px;
+   height: 90px;
+   right: 10px;
+} */
+#screen2-4 img{
+   position: absolute;
+   width: 200px;
+   height: 120px;
+
+   right: 520px; 
+   bottom: 8px; 
+}
+
+
+
+

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+* {margin:0; padding:0;}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+.lottemartdream * {
+ font-family: 'LotteMartDream', sans-serif;
+}
+li{list-style: none;}
+a{color: inherit; text-decoration: none;} 
+button{border:none; border-radius:none;}
+input{border-radius:none;}
+input:focus{outline:none;}   
+button{border:none; border-radius:none;}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+.wrap{width: 100%; height: 100vh; overflow: hidden; position: relative;}
+.wrap>img{width: 100%; height: 100vh; /* 배경 투명도 opacity: 0.5; */}
+.m_logo img{position: absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:1200px;}
+
+span.ments1 {
+    position: absolute;
+    width: 700px;
+    height: 30px;
+    font-size: 5.5ch;
+    bottom: 230px;
+    left: 205px;
+    color: honeydew;
+    font-weight: 700;
+    font-family: 'LotteMartDream';
+    line-height: 57px;
+  }
+
+span.ments2 {
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    font-size: 3ch;
+    bottom: 95px;
+    left: 205px;
+    color: honeydew;
+    font-weight: 400;
+    font-family: 'LotteMartDream';
+  }
+
+
+
+button.btn1 {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    font-size: 2.5ch;
+    top: 35px;
+    right: 325px;
+    background-color: transparent;
+    color: honeydew;
+    font-family: 'LotteMartDream';
+   cursor: pointer;
+  }
+  
+ button.btn1:hover {
+  color: rgba(124, 245, 87, 0.938);
+  transition: all 0.5s;
+}
+
+button.btn2:hover {
+  color: rgba(124, 245, 87, 0.938);
+  transition: all 0.5s; 
+}
+
+  button.btn2 {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    font-size: 2.5ch;
+    top: 35px;
+    right: 185px;
+    background-color: transparent;
+    color: honeydew; 
+    font-family: 'LotteMartDream';  
+    cursor: pointer;
+  }
+
+  

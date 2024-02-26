@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.model.MemberDAO">
+	
+	<insert id="join" parameterType="com.smhrd.model.MemberVO">
+		insert into TBL_MEMBER values (#{mb_id}, #{mb_pw}, #{mb_name}, 'mb_email', #{mb_bloodtype}, #{mb_phone}, #{mb_height}, #{mb_weight}, 'N', sysdate, #{mb_gender}, #{mb_fav_ingredient})
+	</insert>
+	
+	<select id="login" parameterType="com.smhrd.model.MemberVO" resultType="com.smhrd.model.MemberVO">
+		select * from TBL_MEMBER where mb_id=#{mb_id} and mb_pw=#{mb_pw}
+	</select>
+	
+	<select id="todayChart" parameterType="String" resultType="com.smhrd.model.BwChartVO">
+		select * from USER_FOOD where mb_id=#{mb_id} 
+	</select>
+	
+	<select id="weight_chart" resultType="com.smhrd.model.YgChartVO">
+   		select * from TBL_WEIGHT_DAILY where not(mb_id='admin')
+   </select>
+   
+   <select id="KcalChart" parameterType="com.smhrd.model.BwChartVO" resultType="com.smhrd.model.BwChartVO">
+		select * from TBL_MEMBER where mb_id=#{mb_id} and f_kcal=#{f_kcal}
+   </select>
+   
+	<select id="userChart" parameterType="String" resultType="com.smhrd.model.BwChartVO">
+		select * USER_FOOD where u_f_seq=#{u_f_seq}
+	</select>
+	
+	<select id="searchFood" parameterType="String" resultType="com.smhrd.model.BwChartVO">
+		select * from TBL_FOOD where f_name=#{f_name}
+	</select>
+	
+	<insert id="insertFood" parameterType="com.smhrd.model.BwChartVO">
+		insert into TBL_USER_FOOD (f_seq, u_f_dt, mb_id) values (#{f_seq}, sysdate, #{mb_id} )
+	</insert>
+	
+	<insert id="change" parameterType="com.smhrd.model.MemberVO">
+		update TBL_MEMBER 
+            set mb_pw = #{mb_pw},
+                mb_name = #{mb_name}, 
+                mb_bloodtype = #{mb_bloodtype},
+                mb_phone = #{mb_phone},
+                mb_height = #{mb_height},
+                mb_weight = #{mb_weight},
+                mb_gender = #{mb_gender},
+                mb_fav_ingredient = #{mb_fav_ingredient}
+          where mb_id = #{mb_id}
+	</insert>
+	
+	<delete id="deletedw" parameterType="String" >
+		delete from tbl_weight_daily where mb_id=#{mb_id}
+	</delete>
+	
+	<delete id="deleteuf" parameterType="String" >
+		delete from tbl_user_food where mb_id=#{mb_id}
+	</delete>
+	
+	<delete id="quitMember" parameterType="String" >
+		delete from TBL_MEMBER where mb_id=#{mb_id}
+	</delete>
+	
+</mapper>
